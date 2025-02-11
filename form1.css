@@ -1,0 +1,171 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* Ensures there is no space around the edges of the page */
+}
+.body2 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header {
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+    position: fixed; /* Change the position to fixed */
+    top: 0; /* Align the header at the top of the viewport */
+    left: 0; /* Align the header to the left of the viewport */
+    width: 100%; /* Ensure the header spans the full width of the viewport */
+    z-index: 1000; /* Ensure the header stays on top of other content */
+
+}
+.header h1 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #01a2a6;
+}
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+.nav-buttons button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    border: none;
+}
+
+.icon-redthreeblanks {
+    background-image: url(redthreeblanks.png);
+}
+
+.icon-blackthreedots {
+    background-image: url(blackthreedots.png);
+    margin-right: 2rem;
+}
+.container {
+    max-width: 42rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    margin-bottom: 0;
+    background-color: white;
+}
+.form-title {
+    color: #009688;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    text-decoration:underline;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid #009688;
+
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.form-group input {
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+.pass-number {
+    background-color: #eeeeee;
+}
+.captcha {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+.marginLeft {
+    margin-left: 30%;
+}
+.captcha img {
+    margin-left: 1rem;
+}
+.submit-btn {
+    width: 90%;
+    max-width: 40%;
+    padding: 0.65rem;
+    background-color: #fa675c;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30%;
+}
+.submit-btn:hover {
+    background-color: #fa675c;
+}
+.bottom-border {
+
+    border-bottom: 1.5px solid  #01a2a6;
+    max-width: 42rem;
+    margin: 2rem auto;
+    margin-top: 0;
+    padding-top: 0;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    
+}
+
+.footer {
+    text-align: center;
+    background-color: #01a2a6;
+    margin-top: -1.5rem;
+    padding: 1rem;
+    padding-top: 5.5rem;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+@media(max-width: 42rem) {
+    .container {
+        background-color: transparent;
+        border:none;
+        margin-top: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .bottom-border {
+       border-bottom: 1px solid  #01a2a6;
+       margin-left: 3rem;
+       margin-right: 3rem;
+       margin-top: 0;
+       padding-top: 0;
+    }
+    .marginLeft {
+        margin-left: 0;
+    }
+    .submit-btn {
+        max-width: 90%;
+        margin-left:5%
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your e-BusPass</title>
+    <link rel="stylesheet" href="form1.css">
+    <script src="form1.js"></script>
+    
+</head >
+<body style="background-color: #303030">
+    <div class="body2">
+    <header class="header">
+        <button class="icon icon-redthreeblanks"></button>
+        <h1>Home</h1>
+        <button class="icon icon-blackthreedots"></button>
+    </header>
+    <main class="container" >
+        <h2 class="form-title">Get Your e-BusPass</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label><b>e-BusPass Number</b><font color="red">&nbsp;*</font></label>
+                  <input type="text" placeholder="Enter Your e-BusPass Number" class="form-control  pass-number" id="passno" name="passno" value = "7502022396654" readonly="readonly">
+            </div>
+            <div class="form-group">
+                <label for="mobile-number"><b>Enter Mobile Number</b><font color="red">&nbsp;*</font></label>
+                <input type="text" id="mobile-number" name="mobile-number" placeholder="Enter Mobile Number" required>
+            </div>
+            
+             
+            <div class="form-group responsive-captcha">
+                
+                <div class="captcha">Captcha</div>
+                    <img id="captchaImage"src="captcha1.png" alt="Captcha">
+                    <img src="refresh.png" alt="Refresh" class="refresh-btn" id="refresh-btn" style="margin: 0px 0px 0px 0">   
+                
+            </div>
+            
+            <div class="form-group" style="margin-top: 0rem;">
+                <label for="captcha" class="marginLeft">Type the captcha Here</label>
+                <input type="text" id="captcha" name="captcha" placeholder="Type Captcha" required>
+            </div>
+            <div class="submit-btn-space">
+            <button type="submit" class="submit-btn">SUBMIT</button>
+            </div>
+        </form>
+    </main>
+    
+    <div class="bottom-border">
+    </div>
+    <footer class="footer">
+        <p>Copyright © - Delhi e-Governance Society 2024 </p>
+    </footer>
+    </div>
+</body>
+</html>
